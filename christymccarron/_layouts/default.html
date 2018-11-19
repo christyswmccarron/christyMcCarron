@@ -3,27 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>{{page.title}}</title>
 </head>
 
 <body>
   <header>
-    <ul>
-
-
-  
-
-  <li>  <a href="">  </a> </li>
-
-  
-</ul>
-
+    {% include header.html %}
   </header>
-<h1>welcome to the Home page</h1>
-
+{{ content }}
   <footer>
-    <p>this is the footer</p>
-
+    {% include footer.html %}
   </footer>
 
 
