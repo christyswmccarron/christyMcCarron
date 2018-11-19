@@ -1,0 +1,47 @@
+
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+ul {
+  list-style-type: none;
+width: 80vw;
+margin-left: auto;
+margin-right: auto;
+padding-left: 0;
+  overflow: hidden;
+  background-color: #222;
+  border-radius: 1vh;
+
+}
+li {
+
+
+}
+li a {
+    float: left;
+  font-size: 3vh*3vw;
+padding: .5vh .5vh .5vh .5vh;
+  height:10vh;
+  line-height: 10vh;
+  margin: 0;
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a .headerLogo {
+  width: 20vh;
+}
+
+li a:hover{
+  background-color: #111;
+}
+
+.current {
+  background-color: #ff3642;
+}
