@@ -100,6 +100,14 @@ nav li :hover {
   flex-wrap: wrap;
    box-sizing: border-box
 }
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
 
 /** footer **/
 .footer{
@@ -124,4 +132,45 @@ nav li :hover {
 
 .footerPush{
 padding-top: 10%;
+}
+
+
+
+/**
+about page
+*/
+.aboutPage .card {
+  width: 60vmin;
+}
+
+.contactButton {
+  margin-top: 5%;
+  width: 100vmin;
+  text-align: center;
+
+}
+.contactText{
+background-color:#89D2DC;
+padding: 1vmin;
+border-radius: 1vmin;
+color: black;
+}
+.contactText:hover {
+  text-decoration: none;
+color: black;
+font-weight: bold;
+}
+/**
+
+portfolio page
+*/
+.portfolioFlex{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.portfolioFlex .card {
+  max-width: 20rem;
+
 }

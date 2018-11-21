@@ -6,4 +6,19 @@ mainPage: true
 order: 3
 
 ---
-<h1>welcome to the {{ page.title }} page</h1>
+<h1 class ="pageTitle">Welcome to the {{ page.title }} page</h1>
+<div class="portfolioFlex">
+  {% for node in site.pages %}
+  {% if node.path contains 'portfolio/' %}
+  <div class="card">
+    <img class="card-img-top" src= {{node.image}} alt= {{node.title}}>
+    <div class="card-body">
+      <h4 class="card-title"> {{node.title}} </h4>
+      <h5 class ="card-title"> {{node.portfolioType}} </h5>
+      <p class="card-text"> {{node.description}} </p>
+      <a href={{node.url}} class ="btn btn-primary"> View Me!</a>
+    </div>
+  </div>
+  {% endif %}
+ {% endfor %}
+</div>
