@@ -13,8 +13,8 @@
 
 
   <ul>
-
- {% for node in site.pages %}
+{% assign sorted_menu = site.pages | sort:"order" %}
+ {% for node in sorted_menu %}
  {% if node.mainPage == true %}
  {% if node.url == page.url %}
   <li><a class ="current" href={{node.url}}>{{node.title}}</a></li>
