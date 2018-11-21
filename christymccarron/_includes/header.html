@@ -2,27 +2,29 @@
 
 
 
-<div class="headerContainer">
+<nav>
 
 
-<ul>
+
+
+
 
 
 
 
   <ul>
-    <li>
-      <a href="index.html">
-      <img alt ="Logo" src="https://picsum.photos/100/?random" alt="">
 
-      </a>
-
-    </li>
  {% for node in site.pages %}
  {% if node.mainPage == true %}
+ {% if node.url == page.url %}
+  <li><a class ="current" href={{node.url}}>{{node.title}}</a></li>
+  {% else %}
  <li><a href={{node.url}}>{{node.title}}</a></li>
- {%endif%}
+ {% endif %}
+ {% endif %}
  {% endfor %}
+
 </ul>
-</ul>
-</div>
+
+
+</nav>

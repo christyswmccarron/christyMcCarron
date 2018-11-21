@@ -7,46 +7,135 @@
 </head>
 <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/default.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <body>
   <header>
     
 
 
 
-<div class="headerContainer">
+<nav>
 
 
-<ul>
+
+
+
 
 
 
 
   <ul>
-    <li>
-      <a href="index.html">
-      <img alt ="Logo" src="https://picsum.photos/100/?random" alt="">
 
-      </a>
-
-    </li>
  
  
- <li><a href=/>Home</a></li>
+ 
+ 
+ 
+  <li><a class ="current" href=/>Home</a></li>
+  
+ 
  
  
  
  <li><a href=/portfolio.html>Portfolio</a></li>
  
  
+ 
+ 
+ 
+
 </ul>
-</ul>
-</div>
+
+
+</nav>
 
   </header>
-<h1>welcome to the Home page</h1>
+<h1 class="pageTitle">Welcome to the Home page </h1>
+
+
+<!-- Card 1 - slideshow  -->
+<div class="slideshow">
+  <div id="imageSlideshow" class "carousel-slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#imageSlideshow" data-slide-to="0" class="active"> </li>
+      <li data-target="#imageSlideshow" data-slide-to="1">
+      <!-- <li data-target="#imageSlideshow" data-slide-to="2"> -->
+    </ol>
+    <div class="carousel-inner">
+      
+      
+      
+      <div class="carousel-item">
+        <img class="d-block w-100" src=\services\images\16by9.jpg alt=Html and CSS3>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="carousel-item-active">
+        <img class="d-block w-100" src=\services\images\test.jpg alt=Service 2>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+  <a class="carousel-control-next" href="#imageSlideshow" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<!-- Cards of dynamic images - services  -->
+
+
+
+<div class="flexGrid">
+
+
+  <div class="card" style="width: 10rem;">
+    <img class="card-img-top" src="https://via.placeholder.com/150" alt="">
+    <div class="card-body">
+      <h4 class="card-title"> Html and CSS3 </h4>
+      <p class="card-test"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+    </div>
+  </div>
+  
+  
+
+  
+
+  
+
+<div class="flexGrid">
+
+
+  <div class="card" style="width: 10rem;">
+    <img class="card-img-top" src="https://via.placeholder.com/150" alt="">
+    <div class="card-body">
+      <h4 class="card-title"> Service 2 </h4>
+      <p class="card-test"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+    </div>
+  </div>
+  
+  
+</div>
 
   <footer>
-    <p>this is the footer</p>
+    <div class="pusher">
+
+</div>
 
   </footer>
 
