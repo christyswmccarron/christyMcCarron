@@ -15,7 +15,7 @@ order: 1
 <div class="topImageContainer" style ="width:100%">
 <img src= {{node.image}} alt= {{node.title}}>
 <h1 class = "topImageTitle"> {{node.title}} </h1>
-<div class="button"> <a href= "{{site.baseurl}}/{{node.url}}"> Show More! </a>  </div>
+<div class="button"> <a href= "{{site.baseurl}}{{node.url}}"> Show More! </a>  </div>
 </div>
 {% endif %}
 {% endfor %}
@@ -35,7 +35,7 @@ order: 1
     <div class="card-body">
       <h4 class="card-title"> {{node.title}} </h4>
       <p class="card-text"> {{node.description}} </p>
-      <a href="{{site.baseurl}}/{{node.url}}" class ="btn btn-primary"> More Info!</a>
+      <a href="{{site.baseurl}}{{node.url}}" class ="btn btn-primary"> More Info!</a>
     </div>
   </div>
   {% endif %}
