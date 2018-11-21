@@ -16,7 +16,7 @@ order: 3
       <h4 class="card-title"> {{node.title}} </h4>
       <h5 class ="card-title"> {{node.portfolioType}} </h5>
       <p class="card-text"> {{node.description}} </p>
-      <a href={{node.url}} class ="btn btn-primary"> View Me!</a>
+      <a href="{{site.baseurl}}/{{node.url}}" class ="btn btn-primary"> View Me!</a>
     </div>
   </div>
   {% endif %}
